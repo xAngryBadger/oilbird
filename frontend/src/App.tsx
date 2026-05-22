@@ -72,9 +72,9 @@ function App() {
           </div>
         </header>
 
-        <div className="pt-16">
-          <MarkdownEditor onGenerate={handleGenerate} loading={loading} />
-        </div>
+      <main className={`transition-[padding] duration-300 ${bannerVisible ? 'pt-[7rem]' : 'pt-20'}`}>
+        <MarkdownEditor onGenerate={handleGenerate} loading={loading} />
+      </main>
       </motion.div>
     </>
   )
